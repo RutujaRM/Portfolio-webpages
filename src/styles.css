@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+/*Here we just import font css of Google fonts  */
+
+/*using : colon and name(root) that means its implement to whole root means HTML page  */
+/*By using --var name (--) we make it variable so we can use it multiple times rather than passing value */
+
+:root {
+  --light: white;
+  --dark: black;
+  --medium: gray;
+  --size: 50px;
+}
+
+/*Rather than passing value we pass variable which holds that value using var() */
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  margin: 0px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+img {
+  border-radius: 20rem;
+  height: 20rem;
+  width: 20rem;
+  border: 5px solid var(--medium); /*here we pass border value by passing variable */
+}
+a {
+  margin: 1rem;
+}
+ul {
+  line-height: 2rem;
+}
+section {
+  margin: 1rem;
+}
